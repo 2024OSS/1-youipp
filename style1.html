@@ -7,6 +7,12 @@
     <title>style1</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        #top, #sidebar, #bottom, .menuitem {
+            border-radius: 10px;
+        }
         #top {
             background-color: #04AA6D;
             color: #ffffff;
@@ -14,8 +20,11 @@
         }
 
         #menubar {
-            width: 200px;
             float: left;
+            width: 20%;
+            /* background-color: aqua; */
+            height: 420px;
+            margin-left: 0px;
         }
 
         .menuitem {
@@ -28,7 +37,7 @@
         
         .menuitem {
             border-radius: 4px;
-            margin: 4px;
+            /* margin: 4px; */
             color: black;
         }
         .menuitem:hover {
@@ -44,30 +53,30 @@
 
         #main {
             padding: 10px;
-            margin: 0 250px;
-            margin-right: 0;
-            
+            float:left;
+            width: 60%;
+            /* background-color: darkblue; */
+            height: 420px;
         }
 
         #sidebar {
             background-color: #32a4e7;
             color: #ffffff;
-            padding: 10px;
-            width: 180px;
-            bottom: 0;
-            top: 0;
-            right: 0;
-            float: right;
+            padding: 15px;
+            width: 20%;
+            float:left;
+            height: 420px;
         }
 
         
         #bottom {
             border: 1px solid #d4d4d4;
-            background-color: #f1f1f1;
-            text-align: center;
+            /* background-color: #a72323; */
+            
             padding: 10px;
             font-size: 70%;
             line-height: 14px;
+            float:inline-end;
         }
 
 
@@ -80,41 +89,45 @@
         <p>Use the menu to select different Stylesheets</p>
     </div>
     
-    <div id="menubar">
-        <ul>
-            <li class="menuitem"><a style="color: black; text-decoration-line: none;" href="./style1.html">Stylesheet1</a></li>
-            <li class="menuitem"><a style="color: black; text-decoration-line: none;" href="./style2.html">Stylesheet2</a></li>
-            <li class="menuitem">Stylesheet 3</li>
-            <li class="menuitem">Stylesheet 4</li>
-            <li class="menuitem"><a style="color: black; text-decoration-line: none;" href="./style2.html">No Stylesheet</a></li>
-        </ul>
-    </div>
+    
 
-    <div id="main">
-        <h1>Same Page Different Stylesheets</h1>
+    <div id="maincontainer">
+        <div id="menubar">
+            <ul style="padding: 0px">
+                <li class="menuitem"><a style="color: black; text-decoration-line: none;" href="./style1.html">Stylesheet1</a></li>
+                <li class="menuitem">Stylesheet 2</li>
+                <li class="menuitem"><a style="color: black; text-decoration-line: none;" href="./style3.html">Stylesheet3</a></li>
+                <li class="menuitem">Stylesheet 4</li>
+                <li class="menuitem"><a style="color: black; text-decoration-line: none;" href="./style2.html">No Stylesheet</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1>Same Page Different Stylesheets</h1>
 
-        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the
-            layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
-        </p>
-        <a style="color: black;" href="./style1.html">Stylesheet1,</a>&nbsp;
-        <a style="color: black;" href="./style2.html">Stylesheet2,</a>&nbsp;
-        <a style="color: black;" href="https://www.w3schools.com/css/demo_default.htm#">Stylesheet3,</a>&nbsp;
-        <a style="color: black;" href="https://www.w3schools.com/css/demo_default.htm#">Stylesheet4.</a>&nbsp;
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the
+                layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+            </p>
+            <a style="color: black;" href="./style1.html">Stylesheet1,</a>&nbsp;
+            <a style="color: black;" href="https://www.w3schools.com/css/demo_default.htm#">Stylesheet2,</a>&nbsp;
+            <a style="color: black;" href="./style2.html">Stylesheet3,</a>&nbsp;
+            <a style="color: black;" href="https://www.w3schools.com/css/demo_default.htm#">Stylesheet4.</a>&nbsp;
 
 
-        <h2>No Styles</h2>
-        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks
-        like with no stylesheet:</p>
+            <h2>No Styles</h2>
+            <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks
+            like with no stylesheet:</p>
 
-        <a href="https://www.w3schools.com/css/demo_default.htm#">No Stylesheet.</a>
+            <a href="https://www.w3schools.com/css/demo_default.htm#">No Stylesheet.</a>
+        </div>
+        
+        <div id="sidebar">
+            <h3>Side-Bar</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+            magna aliquam erat volutpat.</p>
+        </div>
     </div>
     
-    <div id="sidebar">
-        <h3>Side-Bar</h3>
-
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-        magna aliquam erat volutpat.</p>
-    </div>
 
     <div id="bottom">
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
